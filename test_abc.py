@@ -77,7 +77,7 @@ def test_register6():
     headers = {'Content-Type': 'application/json'}
     response = requests.request("POST", URL, headers=headers, data=json.dumps(request_json))
     print(response)
-    assert response.status_code == 500,"test fail internal server error"       #500_internal_server_error
+    assert response.status_code == 500,"test fail internal server error"       #internal_server_error
     print(response.text)
 
 
